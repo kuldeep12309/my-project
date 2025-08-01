@@ -1,0 +1,22 @@
+.header-section {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.typed-wrapper {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.typed-cursor {
+  display: inline;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.img {
+  height: 300px;
+  width: 300px;
+}

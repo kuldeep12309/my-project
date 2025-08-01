@@ -1,0 +1,17 @@
+.typed-heading span {
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: 3px solid #0d6efd;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #e7f1ff;
+  color: #0d6efd;
+  transition: all 0.3s ease-in-out;
+}
+
+.typed-cursor {
+  font-size: 3.5rem;
+  color: #0d6efd;
+  font-weight: bold;
+}

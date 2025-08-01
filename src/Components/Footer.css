@@ -1,0 +1,9 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.typed-footer-text {
+  font-size: 1.4rem;
+  min-height: 40px;
+  font-weight: 500;
+  color: #f8f9fa;
+}
