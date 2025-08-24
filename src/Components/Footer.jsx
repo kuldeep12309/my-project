@@ -45,8 +45,7 @@ const Footer = () => {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/kuldeep-gupta-a0b299327/"
-              target="_blank"
+         
               className="btn btn-outline-light btn-sm mx-2"
             >
               LinkedIn
