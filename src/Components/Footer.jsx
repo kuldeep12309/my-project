@@ -52,8 +52,6 @@ const Footer = () => {
               LinkedIn
             </a>
             <a
-              href="https://mail.google.com/mail/u/0/#inbox"
-              target="_blank"
               className="btn btn-outline-light btn-sm mx-2"
             >
               Email

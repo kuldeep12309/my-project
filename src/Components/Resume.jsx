@@ -8,8 +8,8 @@ const Resume = () => {
           <hr />
 
           <h4>Contact</h4>
-          <p>Email: kuldeepgupta8800@gmail.com</p>
-          <p>Github link : https://github.com/kuldeep12309/</p>
+          <p>Email: kuldeepgupta8800@gmail.com </p>
+          <p>Github link : <a href=" https://github.com/kuldeep12309/" target="_blank">https://github.com/kuldeep12309/</a></p>
           <p>Phone: +91-8418835697</p>
 
           <h4>Summary</h4>
