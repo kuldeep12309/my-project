@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="row justify-content-center mb-3">
           <div className="col-auto">
             <a
-              href="https://github.com/kuldeep12309/myproject"
+              href="https://github.com/kuldeep12309/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-light btn-sm mx-2"
@@ -53,6 +53,7 @@ const Footer = () => {
             </a>
             <a
               href="https://mail.google.com/mail/u/0/#inbox"
+              target="_blank"
               className="btn btn-outline-light btn-sm mx-2"
             >
               Email
