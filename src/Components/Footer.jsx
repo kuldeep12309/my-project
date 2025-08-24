@@ -24,7 +24,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-dark text-white pt-6 pb-4 mt-5">
+    <footer className="bg-dark text-white pt-5 pb-4 mt-5">
       <div className="container text-center">
         <div className="row justify-content-center mb-4">
           <div className="col-md-8">
@@ -45,16 +45,14 @@ const Footer = () => {
               GitHub
             </a>
             <a
-         
+              href="https://www.linkedin.com/in/kuldeep-gupta-a0b299327/"
+              target="_blank"
               className="btn btn-outline-light btn-sm mx-2"
             >
               LinkedIn
             </a>
-            <a
-              className="btn btn-outline-light btn-sm mx-2"
-            >
-              
-            </a>
+        
+            
           </div>
         </div>
 
