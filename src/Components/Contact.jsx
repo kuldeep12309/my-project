@@ -16,13 +16,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Thank you, ${formData.name}! Your message has been sent.`);
-    // Yahan tum form submit logic ya API call bhi daal sakte ho.
+    alert(`Thank you, ${formData.name}! .`); 
     setFormData({ name: "", email: "", message: "" });
   };
 
   return (
-    <div className="container py-5" style={{ maxWidth: "600px" }}>
+    <div className="container py-5" style={{ maxWidth: "500px" }}>
       <h1 className="text-center mb-4">Contact Me</h1>
 
       <form onSubmit={handleSubmit}>
