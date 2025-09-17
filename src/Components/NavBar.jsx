@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 import { Link } from "react-router";
 
 function NavScrollExample() {
@@ -23,11 +23,9 @@ function NavScrollExample() {
             <Nav.Link as={Link} to="/about" className="text-white">
               About
             </Nav.Link>
-            <NavDropdown title="Resume" id="navbarScrollingDropdown "  className="text-white">
-              <NavDropdown.Item as={Link} to="/resume" >
-                Resume
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link as={Link} to="/resume" className="text-white">
+              Resume
+            </Nav.Link>
             <Nav.Link as={Link} to="/contact" className="text-white">
               Contact
             </Nav.Link>
