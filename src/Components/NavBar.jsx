@@ -1,11 +1,9 @@
 import Container from "react-bootstrap/Container";
-
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-
 import { Link } from "react-router";
 
-function NavScrollExample() {
+function NavBar() {
   return (
     <Navbar expand="lg" bg="primary" data-bs-theme="dark">
       <Container fluid>
@@ -36,4 +34,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default NavBar;

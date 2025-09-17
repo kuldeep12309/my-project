@@ -1,17 +1,66 @@
-.typed-heading span {
-  font-size: 4rem;
-  font-weight: 700;
-  padding: 0.5rem 1rem;
-  border: 3px solid #0d6efd;
-  border-radius: 10px;
-  display: inline-block;
-  background-color: #e7f1ff;
-  color: #0d6efd;
-  transition: all 0.3s ease-in-out;
+.card {
+  border-radius: 12px;
+  border: none;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.typed-cursor {
-  font-size: 3.5rem;
-  color: #0d6efd;
-  font-weight: bold;
+.card-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.card-body h4 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #343a40;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.card-body p,
+.card-body li {
+  font-size: 1rem;
+  color: #050404;
+  
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-body ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.card-body a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .card-body h4 {
+    font-size: 1.2rem;
+  }
+
+  .card-body p,
+  .card-body li {
+    font-size: 0.95rem;
+  }
 }

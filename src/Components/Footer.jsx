@@ -24,7 +24,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-dark text-white pt-5 pb-4 mt-5">
+    <footer className="bg-dark text-white pt-5 pb-4 mt-5 font-family-asif">
       <div className="container text-center">
         <div className="row justify-content-center mb-4">
           <div className="col-md-8">
