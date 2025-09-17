@@ -9,6 +9,7 @@ const Header = () => {
   useEffect(() => {
     const typed = new Typed(typedEl.current, {
       strings: [
+      
         "Frontend Developer",
         "React Enthusiast",
         "UI/UX Designer",
@@ -30,7 +31,7 @@ const Header = () => {
         <div className="col-md-6 p-5 text-center text-md-start animate__animated animate__fadeInLeft">
           <h1
             className="display-2 fl-bold"
-            style={{ fontSize: "50px", fontFamily: "asif" }}
+            style={{ fontSize: "20px", fontFamily: "asif" }}
           >
             Hi,I'm{" "}
             <span className="typed-wrapper">

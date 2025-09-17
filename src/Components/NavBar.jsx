@@ -1,19 +1,15 @@
-// NavBar.js
-import React from "react";
 import Container from "react-bootstrap/Container";
+
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom"; // ✅ Correct import
-import "./NavBar.css"; // Optional - only if you're using custom styles
+import { Link } from "react-router";
 
 function NavScrollExample() {
   return (
-    <Navbar expand="lg" bg="primary" variant="dark" sticky="top">
+    <Navbar expand="lg" bg="primary" data-bs-theme="dark">
       <Container fluid>
-        <Navbar.Brand as={Link} to="/">
-          I Portfolio
-        </Navbar.Brand>
+        <Navbar.Brand>I Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -21,19 +17,18 @@ function NavScrollExample() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/" className="text-white">
               Header
             </Nav.Link>
-            <Nav.Link as={Link} to="/about">
+            <Nav.Link as={Link} to="/about" className="text-white">
               About
             </Nav.Link>
-            <NavDropdown title="Resume" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to="/resume">
+            <NavDropdown title="Resume" id="navbarScrollingDropdown "  className="text-white">
+              <NavDropdown.Item as={Link} to="/resume" >
                 Resume
               </NavDropdown.Item>
-              {/* Add more dropdown items if needed */}
             </NavDropdown>
-            <Nav.Link as={Link} to="/contact">
+            <Nav.Link as={Link} to="/contact" className="text-white">
               Contact
             </Nav.Link>
           </Nav>
