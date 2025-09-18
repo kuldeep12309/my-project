@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "./Header.css";
-import { Link } from "react-router";
+import { Link } from "react-router-dom"; // ✅ सही import
 
 const Header = () => {
   const typedEl = useRef(null);
@@ -9,7 +9,6 @@ const Header = () => {
   useEffect(() => {
     const typed = new Typed(typedEl.current, {
       strings: [
-      
         "Frontend Developer",
         "React Enthusiast",
         "UI/UX Designer",
@@ -33,7 +32,7 @@ const Header = () => {
             className="display-2 fl-bold"
             style={{ fontSize: "20px", fontFamily: "asif" }}
           >
-            Hi,I'm{" "}
+            Hi, I'm{" "}
             <span className="typed-wrapper">
               <span ref={typedEl} className="text-primary"></span>
             </span>
@@ -43,11 +42,14 @@ const Header = () => {
             I design and build modern, fast, and responsive web applications
             using the latest technologies.
           </p>
-          <Link as={Link} to="/resume" className="btn btn-primary mt-4">
+
+          {/* ✅ Fixed Link */}
+          <Link to="/resume" className="btn btn-primary mt-4">
             Resume
           </Link>
         </div>
-        <div className="col-md-6 text-center p-5 animate__animated animate__fadeInRight ">
+
+        <div className="col-md-6 text-center p-5 animate__animated animate__fadeInRight">
           <img
             src="https://www.w3schools.com/howto/img_avatar.png"
             alt="Frontend Developer"
@@ -61,7 +63,6 @@ const Header = () => {
               fontSize: "30px",
             }}
           >
-            {" "}
             Kuldeep Gupta
           </h4>
         </div>
