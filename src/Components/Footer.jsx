@@ -11,7 +11,7 @@ const Footer = () => {
       strings: [
         "Thanks for visiting!",
         "Let's build something awesome.",
-        "Frontend Developer • React Lover ",
+        "Frontend Developer  ",
       ],
       typeSpeed: 50,
       backSpeed: 30,

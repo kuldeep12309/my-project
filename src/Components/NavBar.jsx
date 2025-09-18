@@ -57,7 +57,7 @@ function NavBar() {
                 className="text-white"
                 onClick={handleClose}
               >
-                Header
+                Home
               </Nav.Link>
               <Nav.Link
                 as={Link}
