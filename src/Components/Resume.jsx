@@ -3,13 +3,13 @@ import "./Resume.css";
 
 const Resume = () => {
   return (
-    <div className="container mt-5 font-family-asif">
+    <div className="container mt-5 font-family-asif ">
       <div className="card shadow">
         <div className="card-body">
-          <h1 className="card-title text-center">Kuldeep Gupta</h1>
+          <h1 className="card-title text-center ">Resume</h1>
 
           <hr />
-
+          <h3> Kudeep Gupta </h3>
           <h4>Contact</h4>
           <p>Email: <a href="mailto:kuldeepgupta8800@gmail.com">kuldeepgupta8800@gmail.com</a></p>
           <p>

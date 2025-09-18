@@ -48,7 +48,7 @@ const Header = () => {
             </p>
 
           
-            <Link to="/resume" className="btn btn-primary mt-4">
+            <Link to="/resume" className="btn btn-primary  mt-4">
               Resume
             </Link>
           </div>
