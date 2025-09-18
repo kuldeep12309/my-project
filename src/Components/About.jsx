@@ -24,7 +24,7 @@ const About = () => {
 
       <div className="row mb-5">
         <div >
-          <p className="text-center">
+          <p className="text-center m-3">
             Hello! I'm <strong>Kuldeep Gupta</strong>, a dedicated and
             enthusiastic <strong>Frontend Developer</strong> passionate about
             crafting clean, responsive, and user-friendly web interfaces. I
