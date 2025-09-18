@@ -19,7 +19,7 @@ const About = () => {
   ];
 
   return (
-    <div className="py-5 about-section ">
+    <div className="py-5 about-section container ">
       <h1 className="text-center mb-5">About Me</h1>
 
       <div className="row mb-5">

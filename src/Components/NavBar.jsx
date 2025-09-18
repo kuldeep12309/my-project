@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"; //
 
 function NavBar() {
   return (
-    <Navbar expand="lg" bg="primary" data-bs-theme="dark">
+    <Navbar expand="lg" bg="primary" data-bs-theme="dark" className="container-fluid"  >
       <Container fluid>
         <Navbar.Brand>I Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

@@ -28,8 +28,8 @@ const Header = () => {
   }, []);
 
   return (
-    <>
-      <section className="container-fluid header-section d-flex align-items-center">
+    <div className="container">
+      <section className="container-fluid header-section d-flex align-items-center ">
         <div className="row align-items-center">
           <div className="col-md-6 p-5 text-center text-md-start animate__animated animate__fadeInLeft">
             <h1
@@ -79,7 +79,7 @@ const Header = () => {
       <Contact />
       <hr />
 
-    </>
+    </div>
   );
 };
 
