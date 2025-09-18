@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import "./Header.css";
+
 import { Link } from "react-router-dom";
 import About from "./About";
 import Resume from "./Resume";
@@ -56,7 +56,7 @@ const Header = () => {
             <img
               src="https://www.w3schools.com/howto/img_avatar.png"
               alt="Frontend Developer"
-              className="img-fluid rounded img"
+              className="img-fluid w-50 rounded img"
             />
             <h4
               className="m-2"
