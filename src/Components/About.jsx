@@ -19,11 +19,11 @@ const About = () => {
   ];
 
   return (
-    <div className="py-5 about-section container">
+    <div className="py-5 about-section ">
       <h1 className="text-center mb-5">About Me</h1>
 
       <div className="row mb-5">
-        <div className="col-12">
+        <div >
           <p className="text-center">
             Hello! I'm <strong>Kuldeep Gupta</strong>, a dedicated and
             enthusiastic <strong>Frontend Developer</strong> passionate about
@@ -39,7 +39,7 @@ const About = () => {
       <div className="mt-5">
         <h2 className="text-center mb-4">My Frontend Skills</h2>
 
-        <div className="row">
+        <div className="row m-3">
           {skills.map((skill, index) => (
             <div className="col-12 col-md-4 mb-4" key={index}>
               <div className="d-flex justify-content-between mb-1">
