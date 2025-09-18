@@ -9,7 +9,7 @@ const Resume = () => {
           <h1 className="card-title text-center ">Resume</h1>
 
           <hr />
-          <h3> Kudeep Gupta </h3>
+          <h3> Kuldeep Gupta </h3>
           <h4>Contact</h4>
           <p>Email: <a href="mailto:kuldeepgupta8800@gmail.com">kuldeepgupta8800@gmail.com</a></p>
           <p>
