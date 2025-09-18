@@ -7,11 +7,11 @@ const About = () => {
   ];
 
   return (
-    <div className="container py-5 about-section" >
+    <div className=" py-5 about-section" >
       <h1 className="text-center mb-5">About Me</h1>
 
-      <div className="row justify-content-center mb-5">
-        <div className="col-lg-10">
+      <div className="row  mb-5">
+        <div>
           <p className="text-center">
             Hello! I'm <strong>Kuldeep Gupta</strong>, a dedicated and enthusiastic{" "}
             <strong>Frontend Developer</strong> passionate about crafting clean, responsive,
