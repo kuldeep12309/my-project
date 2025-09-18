@@ -1,4 +1,4 @@
-import"./About.css"
+import React from "react";
 const About = () => {
   const skills = [
     "HTML5", "CSS3", "JavaScript (ES6+)", "React.js", "Redux Toolkit",
