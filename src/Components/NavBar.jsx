@@ -12,7 +12,7 @@ function NavBar() {
 
   const handleClose = () => {
     setShow(false);
-    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll page to top smoothly
+    window.scrollTo({ top: 0, behavior: "smooth" }); 
   };
 
   const handleShow = () => setShow(true);

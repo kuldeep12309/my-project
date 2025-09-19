@@ -1,81 +1,94 @@
+import { useForm } from "react-hook-form";
 import { useState } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm();
 
-  const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Thank you, ${formData.name}! .`);
-    setFormData({ name: "", email: "", message: "" });
+  const onSubmit = async (data) => {
+    setSubmitted(false);
+    const { message } = data;
+
+    const whatsappMessage = encodeURIComponent(message);
+    const phoneNumber = "918418835697";
+
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
+
+    reset(); 
+    setSubmitted(true); 
   };
 
   return (
     <div className="container py-5" style={{ maxWidth: "500px" }}>
       <h1 className="text-center mb-4">Contact Me</h1>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        {/* Name Field - Optional or Removed */}
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
-            Name
+            Name (optional)
           </label>
           <input
-            required
             type="text"
-            className="form-control"
             id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
+            className="form-control"
             placeholder="Enter your name"
+            {...register("name")}
           />
         </div>
+
 
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
-            Email address
+            Email (optional)
           </label>
           <input
-            required
             type="email"
-            className="form-control"
             id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
+            className="form-control"
             placeholder="Enter your email"
+            {...register("email")}
           />
         </div>
 
+        {/* Message Field - Required */}
         <div className="mb-3">
           <label htmlFor="message" className="form-label">
             Message
           </label>
           <textarea
-            required
-            className="form-control"
             id="message"
-            name="message"
             rows="4"
-            value={formData.message}
-            onChange={handleChange}
+            className={`form-control ${errors.message ? "is-invalid" : ""}`}
             placeholder="Write your message here"
+            {...register("message", { required: "Message is required" })}
           ></textarea>
+          {errors.message && (
+            <div className="invalid-feedback">{errors.message.message}</div>
+          )}
         </div>
 
-        <button type="submit" className="btn btn-primary w-100">
-          Send Message
+        <button
+          type="submit"
+          className="btn btn-outline-primary w-100"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? "Submitting..." : "Send on WhatsApp"}
         </button>
+
+        {submitted && (
+          <div className="alert alert-success mt-3 text-center" role="alert">
+            Message sent successfully on WhatsApp!
+          </div>
+        )}
       </form>
 
       <div className="mt-5 text-center">
