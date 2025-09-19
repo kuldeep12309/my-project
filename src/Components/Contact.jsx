@@ -31,7 +31,7 @@ const Contact = () => {
       <h1 className="text-center mb-4">Contact Me</h1>
 
       <form onSubmit={handleSubmit(onSubmit)}>
-        {/* Name Field - Optional or Removed */}
+        
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
             Name (optional)
@@ -59,7 +59,7 @@ const Contact = () => {
           />
         </div>
 
-        {/* Message Field - Required */}
+       
         <div className="mb-3">
           <label htmlFor="message" className="form-label">
             Message
